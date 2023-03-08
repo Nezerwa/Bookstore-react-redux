@@ -175,7 +175,6 @@ Example:
 👤 **Nezerwa Eligrand**
 
 - GitHub: [@Nezerwa](https://github.com/Nezewa)
-- Twitter: [@eligrand1](https://twitter.com/eligrand1)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/eligrand-nezerwa)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
