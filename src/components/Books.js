@@ -2,31 +2,31 @@ import { React } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import AddBook from './AddBook';
 import Book from './Book';
-import { AddBookFunc, RemoveBookFunc } from '../redux/books/books';
+import { addBook, removeBook } from '../redux/books/books';
 
 const Books = () => {
   const dispatch = useDispatch();
-  const StoredBook = useSelector((state) => state.BooksReducer);
+  const storedBooks = useSelector((state) => state.books);
 
-  const AddNewBook = (e, NewBook) => {
+  const addNewBook = (e, newBook) => {
     e.preventDefault();
-    dispatch(AddBookFunc(NewBook));
+    dispatch(addBook(newBook));
   };
-  const RemoveExistingBook = (id) => {
-    dispatch(RemoveBookFunc(id));
+  const removeExistingBook = (id) => {
+    dispatch(removeBook(id));
   };
   return (
     <>
-      {StoredBook.map((item) => (
+      {storedBooks.map((item) => (
         <Book
           title={item.title}
           key={item.id}
           author={item.author}
           id={item.id}
-          RemoveExistingBook={RemoveExistingBook}
+          removeExistingBook={removeExistingBook}
         />
       ))}
-      <AddBook AddNewBook={AddNewBook} />
+      <AddBook addNewBook={addNewBook} />
     </>
   );
 };
