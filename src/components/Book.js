@@ -1,22 +1,29 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import { useDispatch } from "react-redux";
+import { booksActions, deleteBook } from "../redux/books/booksSlice";
 
-const Book = ({ title, author }) => (
-  <>
-    <h3>{title}</h3>
-    <h4>{author}</h4>
-    <button type="button">Remove Book</button>
-  </>
-);
+function Book(props) {
+  const dispatch = useDispatch();
+  const { title, author, id } = props;
 
-Book.propTypes = {
-  title: PropTypes.string,
-  author: PropTypes.string,
-};
+  const removeBookHandler = (e) => {
+    // Dispatch remove book action
+    const { id } = e.target.dataset;
+    dispatch(booksActions.removeBook(id));
 
-Book.defaultProps = {
-  title: '',
-  author: '',
-};
+    // Delete in the backend
+    dispatch(deleteBook(id));
+  };
+
+  return (
+    <div>
+      <h2>{title}</h2>
+      <span>By {author}</span>
+      <button type="button" data-id={id} onClick={removeBookHandler}>
+        Remove
+      </button>
+    </div>
+  );
+}
 
 export default Book;
