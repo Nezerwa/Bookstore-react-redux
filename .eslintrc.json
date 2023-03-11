@@ -34,8 +34,7 @@
     "implicit-arrow-linebreak": "off",
     "react/jsx-curly-newline": "off",
     "import/no-extraneous-dependencies": "off",
-    "operator-linebreak": "off",
-    "no-param-reassign": "off"
+    "operator-linebreak": "off"
   },
   "ignorePatterns": ["dist/", "build/"]
 }
