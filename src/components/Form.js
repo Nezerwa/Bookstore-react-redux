@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { v4 as uuidv4 } from "uuid";
-import { booksActions, postBook } from "../redux/books/booksSlice";
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import { booksActions, postBook } from '../redux/books/booksSlice';
 
 function Form() {
-  const [title, setTitle] = useState("");
-  const [author, setAuthor] = useState("");
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
   const dispatch = useDispatch();
 
   const titleChangeHandler = (e) => {
@@ -26,7 +26,7 @@ function Form() {
       item_id: uuidv4(),
       title,
       author,
-      category: "Fiction",
+      category: 'Fiction',
     };
 
     // Adding book to state
@@ -34,8 +34,8 @@ function Form() {
     dispatch(postBook(bookData));
 
     // Empty form inputs
-    setTitle("");
-    setAuthor("");
+    setTitle('');
+    setAuthor('');
   };
   return (
     <div className="form-wrapper row">

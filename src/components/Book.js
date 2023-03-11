@@ -1,11 +1,12 @@
-import React from "react";
-import { useDispatch } from "react-redux";
-import { booksActions, deleteBook } from "../redux/books/booksSlice";
-import "react-circular-progressbar/dist/styles.css";
-import ProgressBar from "./ProgressBar/ProgressBar";
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { booksActions, deleteBook } from '../redux/books/booksSlice';
+import 'react-circular-progressbar/dist/styles.css';
+import ProgressBar from './ProgressBar/ProgressBar';
 
 function Book(props) {
   const dispatch = useDispatch();
+  // eslint-disable-next-line react/prop-types
   const { title, author, id } = props;
 
   const removeBookHandler = (e) => {
@@ -21,7 +22,10 @@ function Book(props) {
     <div className="book-container">
       <div className="book-details">
         <h2 className="title">{title}</h2>
-        <span className="by">By {author}</span>
+        <span className="by">
+          By
+          {author}
+        </span>
         <div className="buttons-wrapper">
           <button type="button" data-id={id} onClick={removeBookHandler}>
             Remove

@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 // import { useSelector } from "react-redux";
-import Book from "../components/Book";
-import Form from "../components/Form";
-import { getBooks } from "../redux/books/booksSlice";
+import Book from '../components/Book';
+import Form from '../components/Form';
+import { getBooks } from '../redux/books/booksSlice';
 
 function BooksPage() {
   const { books, isLoading } = useSelector((state) => state.books);

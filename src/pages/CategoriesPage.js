@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import Book from "../components/Book";
-import { getBooks } from "../redux/books/booksSlice";
-import "./CategoriesPage.scss";
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import Book from '../components/Book';
+import { getBooks } from '../redux/books/booksSlice';
+import './CategoriesPage.scss';
 
 function CategoriesPage() {
   const { books } = useSelector((state) => state.books);
