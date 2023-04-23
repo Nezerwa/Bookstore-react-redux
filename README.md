@@ -84,9 +84,9 @@
 
 **💡Important note:** When you view the live demo, you will realize that you can delete other people's books. That is okay because this project is meant to show you the functionality of the bookstore. Also, the remote API I am using to store data does not have the authentication and authorization functionality.
 
-After doing this project, I wantend to expand on it and as a result **buklist.com** was born. For the forseable future, I intend to make **buklist.com** project an open source project. You can find ou more about project [buklist.com here](https://github.com/serengia/bookstore-nextjs-redux-mongo-db)
+After doing this project, I wantend to expand on it and as a result **buklist.com** was born. For the forseable future, I intend to make **buklist.com** project an open source project. 
 
-- [Live Demo Link](https://bookstore-redux.onrender.com/)
+- [Live Demo Link](https://delicate-twilight-c0e6a9.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -170,7 +170,7 @@ Example:
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Author <a name="author"></a>
 
 👤 **Nezerwa Eligrand**
 
