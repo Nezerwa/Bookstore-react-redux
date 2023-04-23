@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { BsFillPersonFill } from 'react-icons/bs';
-import Navbar from './Navbar';
+import React from "react";
+import { Link } from "react-router-dom";
+import { BsFillPersonFill } from "react-icons/bs";
+import Navbar from "./Navbar";
 
 function Header() {
   return (
